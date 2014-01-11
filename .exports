@@ -39,7 +39,7 @@ export GROOVY_HOME=${CELLAR}/groovy/2.1.8
 export CQ_HOME=~/Servers/cq5
 export CQ_AUTHOR_HOME=${CQ_HOME}/author
 export CQ_PUBLISH_HOME=${CQ_HOME}/publish
-export JAVA_HOME=/Library/Java/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export GOROOT=${CELLAR}/go/1.1.2
 export GOPATH=$GOROOT
 
