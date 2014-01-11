@@ -45,7 +45,37 @@ install webkit2png
 install zopfli
 
 tap homebrew/versions
+
 install lua52
+
+install android-sdk
+install gradle
+install pig
+install serf
+install apple-gcc42
+install	groovy
+install	pkg-config
+install	sqlite
+install autoconf
+install	hadoop
+install	play
+install	storm
+install automake
+install libtool
+install readline
+install subversion17
+install closure-compiler
+install maven
+install redis
+install tree
+install mongodb
+install sbt
+install zeromq
+install giter8
+install neon
+install scala
+install go
+install scons
 
 # Remove outdated versions from the cellar
 cleanup
