@@ -63,11 +63,12 @@ install	play
 install automake
 install libtool
 install readline
-install subversion17
 install closure-compiler
 install maven
 install redis
 install tree
+install scons
+link scons --overwrite scons
 install mongodb
 install sbt
 install giter8
