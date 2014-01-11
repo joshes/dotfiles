@@ -12,8 +12,10 @@ install findutils
 # Install Bash 4
 install bash
 
+# Disabled as it wasn't working on Mavericks
 # Install wget with IRI support
-install wget --enable-iri
+# install wget --enable-iri
+install wget
 
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
@@ -21,11 +23,13 @@ install ringojs
 install narwhal
 
 # Install more recent versions of some OS X tools
-install vim --override-system-vi
-tap homebrew/dupes
-install homebrew/dupes/grep
-tap josegonzalez/homebrew-php
-install php55
+# install vim --override-system-vi
+# tap homebrew/dupes
+# install homebrew/dupes/grep
+
+# Disabled as it wasn't working on Mavericks
+# tap josegonzalez/homebrew-php
+# install php55
 
 # This formula didn’t work well last time I tried it:
 #install homebrew/dupes/screen
@@ -35,9 +39,9 @@ install ack
 #install exiv2
 install git
 #install imagemagick
-install lynx
+# install lynx
 install node
-install pigz
+# install pigz
 install rename
 install rhino
 install tree
@@ -50,16 +54,12 @@ install lua52
 
 install android-sdk
 install gradle
-install pig
-install serf
 install apple-gcc42
 install	groovy
 install	pkg-config
 install	sqlite
 install autoconf
-install	hadoop
 install	play
-install	storm
 install automake
 install libtool
 install readline
@@ -70,12 +70,9 @@ install redis
 install tree
 install mongodb
 install sbt
-install zeromq
 install giter8
-install neon
 install scala
 install go
-install scons
 
 # Remove outdated versions from the cellar
 cleanup
