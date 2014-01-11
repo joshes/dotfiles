@@ -24,26 +24,36 @@ export GREP_OPTIONS="--color=auto"
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-CELLAR=`brew --cellar`
+# `brewpath` finds the latest installed version (not the active version)
+# example usage: cd $(brewpath mongodb)
+function brewpath() {
+	local path=`brew --cellar`
+	path+="/$1/"
+	path+=`ls -v "$path" | tail -n 1`
+	echo $path
+}
 
-export MONGO_HOME=${CELLAR}/mongodb/2.4.6
-export SCALA_HOME=${CELLAR}/scala/2.10.3
-export ANDROID_HOME=${CELLAR}/android-sdk/22.2.1
+export MONGO_HOME=$(brewpath mongodb)
+export SCALA_HOME=$(brewpath scala)
+export ANDROID_HOME=$(brewpath android-sdk)
 export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m"
-export SBT_HOME=${CELLAR}/sbt/0.13.0
-export PLAY_HOME=${CELLAR}/play/2.2.1
+export SBT_HOME=$(brewpath sbt)
+export PLAY_HOME=$(brewpath play)
 export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256m -Xmx512m"
-export M3_HOME=${CELLAR}/maven/3.1.1
-export GRADLE_HOME=${CELLAR}/gradle/1.8/libexec
-export GROOVY_HOME=${CELLAR}/groovy/2.1.8
+export M3_HOME=$(brewpath maven)
+export GRADLE_HOME=$(brewpath gradle)/libexec
+export GROOVY_HOME=$(brewpath groovy)
 export CQ_HOME=~/Servers/cq5
 export CQ_AUTHOR_HOME=${CQ_HOME}/author
 export CQ_PUBLISH_HOME=${CQ_HOME}/publish
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
-export GOROOT=${CELLAR}/go/1.1.2
-export GOPATH=$GOROOT
+export GOPATH=$(brewpath go)
 
-export PATH=~/Scripts:~/Applications/jad:~/Scripts/dex2jar-0.0.9.13:$PATH
+# TODO move scripts to dotfiles repo and link
+export PATH=~/Scripts:$PATH
+export PATH=~/Applications/jad:$PATH
+export PATH=~/Scripts/dex2jar-0.0.9.13:$PATH
+
 export PATH=$SCALA_HOME/bin:$PATH
 export PATH=$PLAY_HOME/bin:$PATH
 export PATH=$MONGO_HOME/bin:$PATH
@@ -55,6 +65,6 @@ export PATH=$GROOVY_HOME/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/python:$PATH
 export PATH=/usr/local/sbin:$PATH
-export PATH=$GOROOT:$GOROOT/bin:$PATH
+export PATH=$GOPATH:$GOPATH/bin:$PATH
 
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
