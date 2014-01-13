@@ -55,11 +55,11 @@ install lua52
 install android-sdk
 install gradle
 install apple-gcc42
-install	groovy
-install	pkg-config
-install	sqlite
+install groovy
+install pkg-config
+install sqlite
 install autoconf
-install	play
+install play
 install automake
 install libtool
 install readline
