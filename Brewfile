@@ -70,6 +70,7 @@ install tree
 install scons
 link scons --overwrite scons
 install mongodb
+install elasticsearch
 install sbt
 install giter8
 install scala
