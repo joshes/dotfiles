@@ -36,10 +36,10 @@ function brewpath() {
 export MONGO_HOME=$(brewpath mongodb)
 export SCALA_HOME=$(brewpath scala)
 export ANDROID_HOME=$(brewpath android-sdk)
-export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m"
+export MAVEN_OPTS="-Xmx1024g -XX:+CMSClassUnloadingEnabled -XX:+HeapDumpOnOutOfMemoryError"
 export SBT_HOME=$(brewpath sbt)
 export PLAY_HOME=$(brewpath play)
-export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256m -Xmx512m"
+export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMemoryError -Xmx1024m -Dfile.encoding=utf-8"
 export M3_HOME=$(brewpath maven)
 export GRADLE_HOME=$(brewpath gradle)/libexec
 export GROOVY_HOME=$(brewpath groovy)
@@ -48,6 +48,7 @@ export CQ_AUTHOR_HOME=${CQ_HOME}/author
 export CQ_PUBLISH_HOME=${CQ_HOME}/publish
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export GOPATH=$(brewpath go)
+export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
 
 # TODO move scripts to dotfiles repo and link
 export PATH=~/Scripts:$PATH
@@ -66,5 +67,8 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/python:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=$GOPATH:$GOPATH/bin:$PATH
+
+# Workspace specific
+export PATH=~/Workspace/cq-scripts:$PATH
 
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH

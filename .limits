@@ -1,0 +1,4 @@
+rm /etc/{sysctl.conf,launchd.conf,profile}
+echo 'kern.maxfiles=20480' | sudo tee -a /etc/sysctl.conf
+echo -e 'limit maxfiles 8192 20480' | sudo tee -a /etc/launchd.conf
+echo 'ulimit -n 8192' | sudo tee -a /etc/profile
