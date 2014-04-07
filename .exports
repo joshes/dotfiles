@@ -1,5 +1,9 @@
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
 # Make vim the default editor
-export EDITOR="vim"
+export EDITOR="nano"
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
@@ -71,7 +75,12 @@ export PATH=/usr/local/share/python:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 
-# Workspace specific
-export PATH=~/Workspace/cq-scripts:$PATH
+# RVM
+source ~/.rvm/scripts/rvm
+
+# Project specific
+export BRAND_HOME=~/Workspace/brand-cq
+export CQ_SCRIPTS_HOME=~/Workspace/cq-scripts
+export PATH=$CQ_SCRIPTS_HOME:$PATH
 
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
