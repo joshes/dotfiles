@@ -39,7 +39,7 @@ export ANDROID_HOME=$(brewpath android-sdk)
 export MAVEN_OPTS="-Xmx1024g -XX:+CMSClassUnloadingEnabled -XX:+HeapDumpOnOutOfMemoryError"
 export SBT_HOME=$(brewpath sbt)
 export PLAY_HOME=$(brewpath play)
-export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMemoryError -Xmx1024m -Dfile.encoding=utf-8"
+export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
 export M3_HOME=$(brewpath maven)
 export GRADLE_HOME=$(brewpath gradle)/libexec
 export GROOVY_HOME=$(brewpath groovy)
