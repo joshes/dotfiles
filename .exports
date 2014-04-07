@@ -43,9 +43,12 @@ export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMem
 export M3_HOME=$(brewpath maven)
 export GRADLE_HOME=$(brewpath gradle)/libexec
 export GROOVY_HOME=$(brewpath groovy)
-export CQ_HOME=~/Servers/cq5
-export CQ_AUTHOR_HOME=${CQ_HOME}/author
-export CQ_PUBLISH_HOME=${CQ_HOME}/publish
+export CQ_55_HOME=~/Servers/cq5/author
+export CQ_55_TEST_HOME=~/Servers/cq5-test/crx-quickstart
+export CQ_553_HOME=~/Servers/cq553/crx-quickstart
+export CQ_56_HOME=~/Servers/cq56/crx-quickstart
+export CQ_56_CLEAN_HOME=~/Servers/cq56-clean/crx-quickstart
+export CQ_AUTHOR_HOME=${CQ_55_TEST_HOME}
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export GOPATH=$(brewpath go)
 export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
