@@ -1,7 +1,3 @@
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
 # Make vim the default editor
 export EDITOR="nano"
 
@@ -40,24 +36,18 @@ function brewpath() {
 export MONGO_HOME=$(brewpath mongodb)
 export SCALA_HOME=$(brewpath scala)
 export ANDROID_HOME=$(brewpath android-sdk)
-export MAVEN_OPTS="-Xmx1024g -XX:+CMSClassUnloadingEnabled -XX:+HeapDumpOnOutOfMemoryError"
+export MAVEN_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
 export SBT_HOME=$(brewpath sbt)
 export PLAY_HOME=$(brewpath play)
 export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
 export M3_HOME=$(brewpath maven)
 export GRADLE_HOME=$(brewpath gradle)/libexec
 export GROOVY_HOME=$(brewpath groovy)
-export CQ_55_HOME=~/Servers/cq5/author
-export CQ_55_TEST_HOME=~/Servers/cq5-test/crx-quickstart
-export CQ_553_HOME=~/Servers/cq553/crx-quickstart
-export CQ_56_HOME=~/Servers/cq56/crx-quickstart
-export CQ_56_CLEAN_HOME=~/Servers/cq56-clean/crx-quickstart
-export CQ_AUTHOR_HOME=${CQ_55_TEST_HOME}
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export GOPATH=$(brewpath go)
 export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
 
-# TODO move scripts to dotfiles repo and link
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin
 export PATH=~/Scripts:$PATH
 export PATH=~/Applications/jad:$PATH
 export PATH=~/Scripts/dex2jar-0.0.9.13:$PATH
@@ -70,17 +60,9 @@ export PATH=$M2_HOME/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH=$GRADLE_HOME/bin:$PATH
 export PATH=$GROOVY_HOME/bin:$PATH
-export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/python:$PATH
-export PATH=/usr/local/sbin:$PATH
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 
-# RVM
 source ~/.rvm/scripts/rvm
-
-# Project specific
-export BRAND_HOME=~/Workspace/brand-cq
-export CQ_SCRIPTS_HOME=~/Workspace/cq-scripts
-export PATH=$CQ_SCRIPTS_HOME:$PATH
 
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
