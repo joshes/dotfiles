@@ -36,7 +36,7 @@ function brewpath() {
 export MONGO_HOME=$(brewpath mongodb)
 export SCALA_HOME=$(brewpath scala)
 export ANDROID_HOME=$(brewpath android-sdk)
-export MAVEN_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
+export MAVEN_OPTS="-XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -Xmx2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
 export SBT_HOME=$(brewpath sbt)
 export PLAY_HOME=$(brewpath play)
 export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
@@ -63,6 +63,7 @@ export PATH=$GROOVY_HOME/bin:$PATH
 export PATH=/usr/local/share/python:$PATH
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 
-source ~/.rvm/scripts/rvm
+source ~/.cq/env
+export PATH=~/Workspace/cq-tools:~/Workspace/directory-watcher:$PATH
 
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
