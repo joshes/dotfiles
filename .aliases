@@ -157,7 +157,9 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 alias veewee='bundle exec veewee'
 
 # Docker
-alias dockercleancontainers="docker ps -a --no-trunc | grep 'Exit' | awk '{print \$1}' | xargs -L 1 docker rm --force=true"
-alias dockercleanimages="docker images -a --no-trunc | grep none | awk '{print \$3}' | xargs -L 1 docker rmi --force=true"
+# Note that if you get errors, its quite likely the images are in use by other containers that still exist
+# see: https://github.com/dotcloud/docker/issues/4025
+alias dockercleancontainers="docker ps -a --no-trunc | grep 'Exit' | awk '{print \$1}' | xargs -L 1 docker rm -f"
+alias dockercleanimages="docker images -a --no-trunc | grep none | awk '{print \$3}' | xargs -L 1 docker rmi -f"
 alias dockerclean="dockercleancontainers && dockercleanimages"
 
