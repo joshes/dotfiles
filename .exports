@@ -67,3 +67,6 @@ source ~/.cq/env
 export PATH=~/Workspace/cq-tools:~/Workspace/directory-watcher:$PATH
 
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+
+# Boot2Docker
+export DOCKER_HOST=tcp://:2375
