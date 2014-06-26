@@ -157,7 +157,7 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 alias veewee='bundle exec veewee'
 
 # Docker
-alias dockercleancontainers="docker ps -a --no-trunc | grep 'Exit' | awk '{print \$1}' | xargs -L 1 docker rm"
-alias dockercleanimages="docker images -a --no-trunc | grep none | awk '{print \$3}' | xargs -L 1 docker rmi"
+alias dockercleancontainers="docker ps -a --no-trunc | grep 'Exit' | awk '{print \$1}' | xargs -L 1 docker rm --force=true"
+alias dockercleanimages="docker images -a --no-trunc | grep none | awk '{print \$3}' | xargs -L 1 docker rmi --force=true"
 alias dockerclean="dockercleancontainers && dockercleanimages"
 
