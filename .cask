@@ -21,3 +21,6 @@ installcask transmission
 installcask ukelele
 installcask virtualbox
 installcask vlc
+installcask python --with-brewed-openssl
+installcask pip
+installcask virtualenv

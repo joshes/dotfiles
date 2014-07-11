@@ -62,6 +62,12 @@ export PATH=$GRADLE_HOME/bin:$PATH
 export PATH=$GROOVY_HOME/bin:$PATH
 export PATH=/usr/local/share/python:$PATH
 export PATH=$GOPATH:$GOPATH/bin:$PATH
+export PATH=/usr/local/packer:$PATH
+
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+# cache pip-installed packages to avoid re-downloading
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
 source ~/.cq/env
 export PATH=~/Workspace/cq-tools:~/Workspace/directory-watcher:$PATH
