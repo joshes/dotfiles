@@ -75,6 +75,8 @@ install sbt
 install giter8
 install scala
 install go
+brew install python --with-brewed-openssl
+brew install pip
 
 # Remove outdated versions from the cellar
 cleanup

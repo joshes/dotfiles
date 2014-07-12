@@ -1,5 +1,5 @@
 # Install native apps
-brew tap phinze/homebrew-cask
+brew tap caskroom/homebrew-cask
 brew install brew-cask
 
 function installcask() {
@@ -21,5 +21,3 @@ installcask transmission
 installcask ukelele
 installcask virtualbox
 installcask vlc
-installcask python --with-brewed-openssl
-installcask pip
