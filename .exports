@@ -63,6 +63,7 @@ export PATH=$GROOVY_HOME/bin:$PATH
 export PATH=/usr/local/share/python:$PATH
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 export PATH=/usr/local/packer:$PATH
+export PATH=~/Workspace/activator:$PATH
 
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
