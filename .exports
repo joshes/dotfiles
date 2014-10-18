@@ -34,7 +34,7 @@ function brewpath() {
 }
 
 export MONGO_HOME=$(brewpath mongodb)
-export SCALA_HOME=$(brewpath scala)
+export SCALA_HOME=/usr/local/opt/scala/idea
 export ANDROID_HOME=$(brewpath android-sdk)
 export MAVEN_OPTS="-XX:+CMSClassUnloadingEnabled -XX:+CMSClassUnloadingEnabled -Xmx2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
 export SBT_HOME=$(brewpath sbt)
@@ -43,7 +43,7 @@ export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMem
 export M3_HOME=$(brewpath maven)
 export GRADLE_HOME=$(brewpath gradle)/libexec
 export GROOVY_HOME=$(brewpath groovy)
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
 export GOPATH=$(brewpath go)
 export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
 
