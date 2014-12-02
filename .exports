@@ -35,15 +35,15 @@ function brewpath() {
 
 export MONGO_HOME=$(brewpath mongodb)
 export SCALA_HOME=/usr/local/opt/scala/idea
-export ANDROID_HOME=$(brewpath android-sdk)
+#export ANDROID_HOME=$(brewpath android-sdk)
 export MAVEN_OPTS="-XX:+CMSClassUnloadingEnabled -XX:+CMSClassUnloadingEnabled -Xmx2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
 export SBT_HOME=$(brewpath sbt)
-export PLAY_HOME=$(brewpath play)
+#export PLAY_HOME=$(brewpath play)
 export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
 export M3_HOME=$(brewpath maven)
 export GRADLE_HOME=$(brewpath gradle)/libexec
 export GROOVY_HOME=$(brewpath groovy)
-JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
 export GOPATH=$(brewpath go)
 export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
 
@@ -64,18 +64,19 @@ export PATH=/usr/local/share/python:$PATH
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 export PATH=/usr/local/packer:$PATH
 export PATH=~/Workspace/activator:$PATH
+export PATH=$JAVA_HOME/bin:$PATH
 
-# pip should only run if there is a virtualenv currently activated
-export PIP_REQUIRE_VIRTUALENV=true
-# cache pip-installed packages to avoid re-downloading
-export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-
-source ~/.cq/env
-export PATH=~/Workspace/cq-tools:~/Workspace/directory-watcher:$PATH
-
-export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+## pip should only run if there is a virtualenv currently activated
+#export PIP_REQUIRE_VIRTUALENV=true
+## cache pip-installed packages to avoid re-downloading
+#export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+#export WORKON_HOME=~/.virtualenvs
+#source /usr/local/bin/virtualenvwrapper.sh
+#
+#source ~/.cq/env
+#export PATH=~/Workspace/cq-tools:~/Workspace/directory-watcher:$PATH
+#
+#export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 
 # Boot2Docker
 export DOCKER_HOST=tcp://192.168.59.103:2375
