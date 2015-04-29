@@ -320,4 +320,3 @@ syspip(){
 linecount() {
 	( find ./ -name "$1" -print0 | xargs -0 cat ) | wc -l
 }
-
