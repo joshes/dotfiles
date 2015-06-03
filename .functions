@@ -322,5 +322,6 @@ linecount() {
 }
 
 cleanidea() {
-	rm -rf .idea && find . -name *.iml -exec rm "{}" \;
+	rm -rf .idea
+	find . -name *.iml -exec rm "{}" \;
 }
