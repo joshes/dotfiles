@@ -320,3 +320,7 @@ syspip(){
 linecount() {
 	( find ./ -name "$1" -print0 | xargs -0 cat ) | wc -l
 }
+
+cleanidea() {
+	rm -rf .idea && find . -name *.iml -exec rm "{}" \;
+}
