@@ -325,3 +325,9 @@ cleanidea() {
 	rm -rf .idea
 	find . -name *.iml -exec rm "{}" \;
 }
+
+rmtrash() {
+    rm -rf ~/.Trash
+    rm -rf /Volumes/"NAME"/.Trashes
+    -rf /.Trashes
+}
