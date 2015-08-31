@@ -43,7 +43,7 @@ export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMem
 export M3_HOME=$(brewpath maven)
 export GRADLE_HOME=$(brewpath gradle)/libexec
 export GROOVY_HOME=$(brewpath groovy)
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export GOPATH=$(brewpath go)
 export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
 

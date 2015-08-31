@@ -350,3 +350,7 @@ function setjdk() {
  function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
  }
+
+ function die() {
+ 	ps -A | grep $1 | awk '{print $1}' | xargs kill -9
+ }
