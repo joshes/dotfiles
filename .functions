@@ -354,3 +354,7 @@ function setjdk() {
  function die() {
  	ps -A | grep $1 | awk '{print $1}' | xargs kill -9
  }
+
+ function fixbrew() {
+ 	sudo chown $(whoami):admin /usr/local && sudo chown -R $(whoami):admin /usr/local
+ }
