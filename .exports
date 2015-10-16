@@ -47,7 +47,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export GOPATH=$(brewpath go)
 export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
 
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin
 export PATH=~/Scripts:$PATH
 export PATH=~/Applications/jad:$PATH
 export PATH=~/Scripts/dex2jar-0.0.9.13:$PATH
