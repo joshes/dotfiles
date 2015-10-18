@@ -84,11 +84,11 @@ export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
 
 # Cloud Foundry
 export CF_COLOR=true                      # Colorize output?
-export CF_HOME=path/to/dir/               # Override path to default config directory
-export CF_PLUGIN_HOME=path/to/dir/        # Override path to default plugin config directory
-export CF_STAGING_TIMEOUT=15              # Max wait time for buildpack staging, in minutes
-export CF_STARTUP_TIMEOUT=5               # Max wait time for app instance startup, in minutes
-export CF_TRACE=true                      # Print API request diagnostics to stdout
-export CF_TRACE=path/to/trace.log         # Append API request diagnostics to a log file
-export HTTP_PROXY=proxy.example.com:8080  # Enable HTTP proxying for API requests
+#export CF_HOME=path/to/dir/               # Override path to default config directory
+#export CF_PLUGIN_HOME=path/to/dir/        # Override path to default plugin config directory
+#export CF_STAGING_TIMEOUT=15              # Max wait time for buildpack staging, in minutes
+#export CF_STARTUP_TIMEOUT=5               # Max wait time for app instance startup, in minutes
+#export CF_TRACE=true                      # Print API request diagnostics to stdout
+#export CF_TRACE=path/to/trace.log         # Append API request diagnostics to a log file
+#export HTTP_PROXY=proxy.example.com:8080  # Enable HTTP proxying for API requests
 
