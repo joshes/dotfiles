@@ -82,8 +82,13 @@ PYTHONWARNINGS="ignore:Unverified HTTPS request"
 export COPYFILE_DISABLE=true
 export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
 
-# Docker-machine
-export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
+# Cloud Foundry
+CF_COLOR=true                      # Colorize output?
+CF_HOME=path/to/dir/               # Override path to default config directory
+CF_PLUGIN_HOME=path/to/dir/        # Override path to default plugin config directory
+CF_STAGING_TIMEOUT=15              # Max wait time for buildpack staging, in minutes
+CF_STARTUP_TIMEOUT=5               # Max wait time for app instance startup, in minutes
+CF_TRACE=true                      # Print API request diagnostics to stdout
+CF_TRACE=path/to/trace.log         # Append API request diagnostics to a log file
+HTTP_PROXY=proxy.example.com:8080  # Enable HTTP proxying for API requests
 
