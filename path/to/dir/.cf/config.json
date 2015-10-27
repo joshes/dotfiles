@@ -1,0 +1,42 @@
+{
+  "ConfigVersion": 3,
+  "Target": "https://api.run.pivotal.io",
+  "ApiVersion": "2.40.0",
+  "AuthorizationEndpoint": "https://login.run.pivotal.io",
+  "LoggregatorEndPoint": "wss://loggregator.run.pivotal.io:443",
+  "DopplerEndPoint": "wss://doppler.run.pivotal.io:443",
+  "UaaEndpoint": "https://uaa.run.pivotal.io",
+  "AccessToken": "bearer eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJjODM2MzQ5Yy1kY2RiLTQ4YzYtYmNkNS03YTZiZGJkODM4MzAiLCJzdWIiOiJmZTAzMzIyNy1mMzI3LTQ1NjQtOWQ0ZS00NmExMTg2N2M5M2EiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLnJlYWQiLCJwYXNzd29yZC53cml0ZSIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJ1YWEudXNlciJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiYXpwIjoiY2YiLCJncmFudF90eXBlIjoicGFzc3dvcmQiLCJ1c2VyX2lkIjoiZmUwMzMyMjctZjMyNy00NTY0LTlkNGUtNDZhMTE4NjdjOTNhIiwib3JpZ2luIjoidWFhIiwidXNlcl9uYW1lIjoiam9zaHVhQHRhZ3NwYWNlLmNvbS5hdSIsImVtYWlsIjoiam9zaHVhQHRhZ3NwYWNlLmNvbS5hdSIsInJldl9zaWciOiJjZjlmYjcwNyIsImlhdCI6MTQ0NTE4MTEzNiwiZXhwIjoxNDQ1MTgxNzM2LCJpc3MiOiJodHRwczovL3VhYS5ydW4ucGl2b3RhbC5pby9vYXV0aC90b2tlbiIsInppZCI6InVhYSIsImF1ZCI6WyJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiLCJjZiIsInVhYSIsIm9wZW5pZCJdfQ.rbdpS5-4Uh2H44jCXXbUNIyFMqh6x8kTyBwZc-SXWloXJr_jo7PSwMcqbQUlrp_vlTNKNjMf041JrboeK226-O7fQfnKy_pVw8XtvR11LyNZO7Zy_58WWSo4hf25BAmjbHPnbpmETrVGzhEsMzotGKBGuBsStiYE-sPguy-p1EmVD3Ujlw6Q8PE-Ea9SpHxv9wavAmHbebnx74DNzESTM8OZDhTs6kQqCUlM794eZnNhDcskCV04yFtXye7bbgPYrMEAyAbrPBzKgpQEno1FEW03nMCTP5gG378CNgG8-4GNJvhZmls8vI9LLWmqJ3q8jxJD6UHwyqDPvX2XAH5FXA",
+  "SSHOAuthClient": "ssh-proxy",
+  "RefreshToken": "eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiIxY2JiOTg1NC1hN2VjLTQ4YTctOGY4Mi1jZmVkNmE3ZmZlNjQtciIsInN1YiI6ImZlMDMzMjI3LWYzMjctNDU2NC05ZDRlLTQ2YTExODY3YzkzYSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsInBhc3N3b3JkLndyaXRlIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInVhYS51c2VyIl0sImlhdCI6MTQ0NTE4MTA1MCwiZXhwIjoxNDQ3NzczMDUwLCJjaWQiOiJjZiIsImNsaWVudF9pZCI6ImNmIiwiaXNzIjoiaHR0cHM6Ly91YWEucnVuLnBpdm90YWwuaW8vb2F1dGgvdG9rZW4iLCJ6aWQiOiJ1YWEiLCJncmFudF90eXBlIjoicGFzc3dvcmQiLCJ1c2VyX25hbWUiOiJqb3NodWFAdGFnc3BhY2UuY29tLmF1Iiwib3JpZ2luIjoidWFhIiwidXNlcl9pZCI6ImZlMDMzMjI3LWYzMjctNDU2NC05ZDRlLTQ2YTExODY3YzkzYSIsInJldl9zaWciOiJjZjlmYjcwNyIsImF1ZCI6WyJjZiIsImNsb3VkX2NvbnRyb2xsZXIiLCJwYXNzd29yZCIsIm9wZW5pZCIsInVhYSJdfQ.GpAarO8iH9uR0ti9LID2VadMN24DArOywC3Ab92KLhZxTUGHUHOHSPwzqH0HJBKZMDPCnGHs01c5BE-tMfxwowyCykHAdCje8IrEYxocrohhyR_BX40tPb_ns-CFL890mcTodT-feevL8VZUE9iI6tpOd-n24aCmGd1N0-NGw17Vqbjow3STAvBoUMiNddWgEJwmyLKkVs9eYZzGXtQVaQzhL2ZCfETl546q80kGBuFUCrnbWQFEFWO4vjmVvS6Ct2zCxAy-euEReOUDd2khq7PZlfB4V_Zt83Pra13bI0GUHTuQXv01wBoP0Bq-yYgnxIWOJqz4n9SyzY-QxIMgtg",
+  "OrganizationFields": {
+    "Guid": "1e95a0d0-fe6f-4d9f-9cac-367e062e377d",
+    "Name": "TagSpace",
+    "QuotaDefinition": {
+      "name": "",
+      "memory_limit": 0,
+      "instance_memory_limit": 0,
+      "total_routes": 0,
+      "total_services": 0,
+      "non_basic_services_allowed": false
+    }
+  },
+  "SpaceFields": {
+    "Guid": "91118329-c5d2-45a5-8e93-960a2ee0c205",
+    "Name": "development",
+    "AllowSSH": true
+  },
+  "SSLDisabled": false,
+  "AsyncTimeout": 0,
+  "Trace": "",
+  "ColorEnabled": "",
+  "Locale": "",
+  "PluginRepos": [
+    {
+      "Name": "CF-Community",
+      "Url": "http://plugins.cloudfoundry.org"
+    }
+  ],
+  "MinCliVersion": "",
+  "MinRecommendedCliVersion": ""
+}
