@@ -66,29 +66,29 @@ export PATH=/usr/local/packer:$PATH
 export PATH=~/Workspace/activator:$PATH
 export PATH=$JAVA_HOME/bin:$PATH
 
+PYTHONWARNINGS="ignore:Unverified HTTPS request"
+export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/2.7/lib
+export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
+
 ## pip should only run if there is a virtualenv currently activated
 #export PIP_REQUIRE_VIRTUALENV=true
 ## cache pip-installed packages to avoid re-downloading
 #export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 #export WORKON_HOME=~/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
-#
+
 #source ~/.cq/env
 #export PATH=~/Workspace/cq-tools:~/Workspace/directory-watcher:$PATH
-#
-#export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
-PYTHONWARNINGS="ignore:Unverified HTTPS request"
 
 export COPYFILE_DISABLE=true
 export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
 
 # Cloud Foundry
-export CF_COLOR=true                      # Colorize output?
-#export CF_HOME=path/to/dir/               # Override path to default config directory
-#export CF_PLUGIN_HOME=path/to/dir/        # Override path to default plugin config directory
-#export CF_STAGING_TIMEOUT=15              # Max wait time for buildpack staging, in minutes
-#export CF_STARTUP_TIMEOUT=5               # Max wait time for app instance startup, in minutes
-#export CF_TRACE=true                      # Print API request diagnostics to stdout
-#export CF_TRACE=path/to/trace.log         # Append API request diagnostics to a log file
-#export HTTP_PROXY=proxy.example.com:8080  # Enable HTTP proxying for API requests
+export CF_COLOR=true
+
+# Docker Machine
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/Users/joshh/.docker/machine/machines/default"
+export DOCKER_MACHINE_NAME="default"
 
