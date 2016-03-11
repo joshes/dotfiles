@@ -322,8 +322,8 @@ function linecount() {
 }
 
 function cleanidea() {
-	rm -rf .idea
-	find . -name *.iml -exec rm "{}" \;
+	find `pwd` -name .idea -exec rm -rf "{}" \;
+	find `pwd` -name *.iml -exec rm "{}" \;
 }
 
 function rmtrash() {
