@@ -47,8 +47,10 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export GOPATH=$(brewpath go)
 export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
 
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin
 export PATH=~/Scripts:$PATH
+
 export PATH=~/Applications/jad:$PATH
 export PATH=~/Scripts/dex2jar-0.0.9.13:$PATH
 
@@ -65,10 +67,11 @@ export PATH=$GOPATH:$GOPATH/bin:$PATH
 export PATH=/usr/local/packer:$PATH
 export PATH=~/Workspace/activator:$PATH
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$PYENV_ROOT/bin:$PYENV_ROOT/shims:$PATH
 
 PYTHONWARNINGS="ignore:Unverified HTTPS request"
-export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/2.7/lib
-export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
+#export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/2.7/lib
+#export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
 
 ## pip should only run if there is a virtualenv currently activated
 #export PIP_REQUIRE_VIRTUALENV=true
@@ -91,3 +94,5 @@ export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://localhost:2376
 export DOCKER_CERT_PATH=/Users/joshh/.docker/machine/machines/default
 export DOCKER_MACHINE_NAME=default
+
+eval "$(pyenv init -)"
