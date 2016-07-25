@@ -47,6 +47,7 @@ export M3_HOME=$(brewpath maven)
 export GRADLE_HOME=$(brewpath gradle)/libexec
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_OPTS="java.net.preferIPv4Stack $JAVA_OPTS"
 export GOPATH=$(brewpath go)
 export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
 
@@ -93,9 +94,9 @@ export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
 export CF_COLOR=true
 
 # Docker Machine
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://localhost:2376
-export DOCKER_CERT_PATH=/Users/joshh/.docker/machine/machines/default
-export DOCKER_MACHINE_NAME=default
+#export DOCKER_TLS_VERIFY=1
+#export DOCKER_HOST=tcp://localhost:2376
+#export DOCKER_CERT_PATH=/Users/joshh/.docker/machine/machines/default
+#export DOCKER_MACHINE_NAME=default
 
 eval "$(pyenv init -)"
