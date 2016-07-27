@@ -290,3 +290,12 @@ function setjdk() {
  function fixbrew() {
  	sudo chown $(whoami):admin /usr/local && sudo chown -R $(whoami):admin /usr/local
  }
+
+# `brewpath` finds the latest installed version (not the active version)
+# example usage: cd $(brewpath mongodb)
+function brewpath() {
+	local path=`brew --cellar`
+	path+="/$1/"
+	path+=`ls -v "$path" | tail -n 1`
+	echo $path
+}

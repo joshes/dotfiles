@@ -1,5 +1,5 @@
 # Make vim the default editor
-export EDITOR="nano"
+export EDITOR="vim"
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
@@ -26,77 +26,3 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
-
-# `brewpath` finds the latest installed version (not the active version)
-# example usage: cd $(brewpath mongodb)
-function brewpath() {
-	local path=`brew --cellar`
-	path+="/$1/"
-	path+=`ls -v "$path" | tail -n 1`
-	echo $path
-}
-
-export MONGO_HOME=$(brewpath mongodb)
-export SCALA_HOME=/usr/local/opt/scala/idea
-#export ANDROID_HOME=$(brewpath android-sdk)
-export MAVEN_OPTS="-XX:+CMSClassUnloadingEnabled -XX:+CMSClassUnloadingEnabled -Xmx2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
-export SBT_HOME=$(brewpath sbt)
-#export PLAY_HOME=$(brewpath play)
-export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -Xmx1024m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=utf-8"
-export M3_HOME=$(brewpath maven)
-export GRADLE_HOME=$(brewpath gradle)/libexec
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-export JAVA_OPTS="java.net.preferIPv4Stack $JAVA_OPTS"
-export GOPATH=$(brewpath go)
-export GRADLE_OPTS="-Xmx1024m -Dfile.encoding=utf-8"
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin
-export PATH=~/Scripts:$PATH
-
-export PATH=~/Applications/jad:$PATH
-export PATH=~/Scripts/dex2jar-0.0.9.13:$PATH
-
-export PATH=$SCALA_HOME/bin:$PATH
-export PATH=$PLAY_HOME/bin:$PATH
-export PATH=$MONGO_HOME/bin:$PATH
-export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
-export PATH=$M2_HOME/bin:$PATH
-export PATH=~/bin:$PATH
-export PATH=$GRADLE_HOME/bin:$PATH
-export PATH=$GROOVY_HOME/bin:$PATH
-export PATH=/usr/local/share/python:$PATH
-export PATH=$GOPATH:$GOPATH/bin:$PATH
-export PATH=/usr/local/packer:$PATH
-export PATH=~/Workspace/activator:$PATH
-export PATH=$JAVA_HOME/bin:$PATH
-export PATH=$PYENV_ROOT/bin:$PYENV_ROOT/shims:$PATH
-
-PYTHONWARNINGS="ignore:Unverified HTTPS request"
-#export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/2.7/lib
-#export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
-
-## pip should only run if there is a virtualenv currently activated
-#export PIP_REQUIRE_VIRTUALENV=true
-## cache pip-installed packages to avoid re-downloading
-#export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-#export WORKON_HOME=~/.virtualenvs
-#source /usr/local/bin/virtualenvwrapper.sh
-
-#source ~/.cq/env
-#export PATH=~/Workspace/cq-tools:~/Workspace/directory-watcher:$PATH
-
-export COPYFILE_DISABLE=true
-export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
-
-# Cloud Foundry
-export CF_COLOR=true
-
-# Docker Machine
-#export DOCKER_TLS_VERIFY=1
-#export DOCKER_HOST=tcp://localhost:2376
-#export DOCKER_CERT_PATH=/Users/joshh/.docker/machine/machines/default
-#export DOCKER_MACHINE_NAME=default
-
-eval "$(pyenv init -)"

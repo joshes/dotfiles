@@ -1,2 +1,0 @@
-sudo ln -s $(brewpath python)/bin/python python
-syspip install virtualenv virtualenvwrapper
