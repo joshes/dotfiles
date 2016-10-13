@@ -49,3 +49,5 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Rvm
 #source ~/.rvm/scripts/rvm
+
+export PATH=~/Library/Python/2.7/bin:$PATH
