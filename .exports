@@ -26,3 +26,18 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+export PATH=/Users/joshh/Library/Android/sdk/tools:$PATH
+export PATH=/Users/joshh/Library/Android/sdk/platform-tools:$PATH
+
+export ANDROID_HOME=/Users/joshh/Library/Android/sdk
+export ANDROID_NDK_HOME=/Users/joshh/Library/Android/android-ndk-r13
+
+# http://stackoverflow.com/questions/22956596/objective-c-symbolication-issue-error-developer-dir-is-not-defined-at-symbo
+export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
+export PATH=/Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/:$PATH
+
+# Tensorflow GPU (Cuda) 
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
