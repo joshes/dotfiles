@@ -45,3 +45,6 @@ export PATH="$CUDA_HOME/bin:$PATH"
 # Kubernetes
 export PATH=/Users/joshh/kubernetes/client/bin:$PATH
 export KOPS_STATE_STORE=s3://clusters.k8s.joshes.io/
+
+# Ignore stuff from serverless
+export SLS_IGNORE_WARNING=1
