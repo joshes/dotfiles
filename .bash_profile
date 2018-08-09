@@ -50,3 +50,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Initialize Conda
 export PATH=~/anaconda3/bin:$PATH
 . /Users/joshh/anaconda3/etc/profile.d/conda.sh
+
+# Setup Go
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
