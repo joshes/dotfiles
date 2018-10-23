@@ -34,3 +34,5 @@ export GPG_TTY=$(tty);
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
 
+# For pig support 
+export HCAT_HOME=/usr/local/opt/hive/libexec/hcatalog
