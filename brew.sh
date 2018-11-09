@@ -84,6 +84,8 @@ brew install zopfli
 
 brew install go
 brew install rust
+brew install kops
+brew install kubectl
 
 # Remove outdated versions from the cellar.
 brew cleanup
