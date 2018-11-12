@@ -1,5 +1,5 @@
 # Make vim the default editor
-export EDITOR="nano"
+export EDITOR="vi"
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
@@ -45,3 +45,6 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export GOPATH=$(go env GOPATH)
 export GOBIN=$(go env GOPATH)/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
+
+# Fix pip3 path warning
+export PATH="$PATH:$HOME/Library/Python/3.7/bin"
