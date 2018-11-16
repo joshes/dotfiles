@@ -8,22 +8,20 @@
     "Blue Component" : 1,
     "Red Component" : 0
   },
-  "Horizontal Spacing" : 1,
+  "Transparency" : 0,
   "Normal Font" : "Monaco 11",
   "Bold Color" : {
     "Green Component" : 1,
     "Blue Component" : 0,
     "Red Component" : 0
   },
-  "Link Color" : {
-    "Red Component" : 0,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.73423302173614502,
-    "Alpha Component" : 1,
-    "Green Component" : 0.35916060209274292
+  "Horizontal Spacing" : 1,
+  "Ansi 4 Color" : {
+    "Green Component" : 0,
+    "Blue Component" : 0.69803921568627447,
+    "Red Component" : 0
   },
   "Custom Directory" : "Recycle",
-  "Right Option Key Sends" : 0,
   "Rows" : 25,
   "Default Bookmark" : "No",
   "Cursor Guide Color" : {
@@ -277,7 +275,7 @@
     "Alpha Component" : 0.5,
     "Green Component" : 0.1491314172744751
   },
-  "Scrollback Lines" : 1000,
+  "Scrollback Lines" : 0,
   "Send Code When Idle" : false,
   "Close Sessions On End" : true,
   "Terminal Type" : "xterm-256color",
@@ -301,32 +299,30 @@
     "Blue Component" : 0.094117647058823528,
     "Red Component" : 0.13725490196078433
   },
-  "Transparency" : 0,
-  "Ansi 1 Color" : {
-    "Green Component" : 0,
-    "Blue Component" : 0,
-    "Red Component" : 0.59999999999999998
-  },
   "Ansi 0 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
     "Red Component" : 0
   },
+  "Guid" : "5CEBD70C-8199-4E2A-B8C9-999D57E52FFD",
   "Ansi 2 Color" : {
     "Green Component" : 0.65098039215686276,
     "Blue Component" : 0,
     "Red Component" : 0
+  },
+  "Link Color" : {
+    "Red Component" : 0,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.73423302173614502,
+    "Alpha Component" : 1,
+    "Green Component" : 0.35916060209274292
   },
   "Ansi 3 Color" : {
     "Green Component" : 0.59999999999999998,
     "Blue Component" : 0,
     "Red Component" : 0.59999999999999998
   },
-  "Ansi 5 Color" : {
-    "Green Component" : 0,
-    "Blue Component" : 0.69803921568627447,
-    "Red Component" : 0.69803921568627447
-  },
+  "Right Option Key Sends" : 0,
   "Ansi 6 Color" : {
     "Green Component" : 0.65098039215686276,
     "Blue Component" : 0.69803921568627447,
@@ -347,10 +343,14 @@
     "Blue Component" : 0,
     "Red Component" : 0.89803921568627454
   },
-  "Ansi 4 Color" : {
+  "Ansi 1 Color" : {
+    "Green Component" : 0,
+    "Blue Component" : 0,
+    "Red Component" : 0.59999999999999998
+  },
+  "Ansi 5 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0.69803921568627447,
-    "Red Component" : 0
-  },
-  "Guid" : "5CEBD70C-8199-4E2A-B8C9-999D57E52FFD"
+    "Red Component" : 0.69803921568627447
+  }
 }
