@@ -169,6 +169,10 @@ function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
 
+function node_clean() {
+	find . -name "node_modules" -exec rm -rf '{}' +
+}
+
 function linecount() {
 	( find ./ -name "$1" -print0 | xargs -0 cat ) | wc -l
 }
