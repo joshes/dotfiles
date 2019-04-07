@@ -223,3 +223,11 @@ function brewpath() {
 	path+=`ls -v "$path" | tail -n 1`
 	echo $path
 }
+
+function cleandocker() {
+	echo "Removing exited containers..."
+	docker rm $(docker ps -q -f 'status=exited')
+	echo "Removing dangling images ..."
+	docker rmi $(docker images -q -f "dangling=true")
+	echo "Done."
+}

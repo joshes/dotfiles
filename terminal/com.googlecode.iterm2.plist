@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AboutToPasteTabsWithCancel</key>
+	<true/>
+	<key>AboutToPasteTabsWithCancel_selection</key>
+	<integer>2</integer>
 	<key>AllowClipboardAccess</key>
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -43458,10 +43462,12 @@
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1409 110 445 282 0 0 1920 1057 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>795 537 918 423 0 0 1920 1057 </string>
+	<string>795 537 796 486 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>378 473 570 402 0 0 1920 1057 </string>
+	<string>275 311 822 477 0 0 1440 900 </string>
 	<key>NeverWarnAboutShortLivedSessions_5CEBD70C-8199-4E2A-B8C9-999D57E52FFD</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_5CEBD70C-8199-4E2A-B8C9-999D57E52FFD_selection</key>
@@ -44171,7 +44177,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-11-16T00:44:47Z</date>
+	<date>2019-04-03T17:44:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -44195,6 +44201,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.5</string>
+	<string>3.2.8</string>
 </dict>
 </plist>
