@@ -86,6 +86,8 @@ brew install go
 brew install rust
 brew install kops
 brew install kubectl
+brew install kube-ps1
+brew install kubectx
 brew install nvm
 
 # Remove outdated versions from the cellar.

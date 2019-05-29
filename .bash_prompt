@@ -11,16 +11,6 @@ elif infocmp xterm-256color >/dev/null 2>&1; then
 	export TERM='xterm-256color';
 fi;
 
-prompt_kube_context()
-{
-    # Get current context
-    CONTEXT=$(cat ~/.kube/config | grep "current-context:" | sed "s/current-context: //")
-
-    if [ -n "$CONTEXT" ]; then
-        echo "(${CONTEXT})"
-    fi
-}
-
 prompt_git() {
 	local s='';
 	local branchName='';
@@ -115,9 +105,24 @@ else
 	hostStyle="${yellow}";
 fi;
 
+# Setup kube-ps1
+# https://github.com/jonmosco/kube-ps1#customization
+export KUBE_PS1_SYMBOL_ENABLE="true"
+export KUBE_PS1_SYMBOL_USE_IMG="false"
+export KUBE_PS1_PREFIX=""
+export KUBE_PS1_SEPARATOR="|"
+export KUBE_PS1_DIVIDER=": "
+export KUBE_PS1_SUFFIX=""
+export KUBE_PS1_CTX_COLOR="cyan"     # Set default color of the cluster context
+export KUBE_PS1_SYMBOL_COLOR="cyan"  # Set default color of the Kubernetes symbol
+export KUBE_PS1_NS_COLOR="yellow"      # Set default color of the cluster namespace
+export KUBE_PS1_BG_COLOR=""      # Set default color of the prompt background
+
+source /usr/local/opt/kube-ps1/share/kube-ps1.sh
+
 # Set the terminal title and prompt.
-PS1="\[\033]0;\W\007\]"; # working directory base name
-PS1+="\[$(tput setaf 170)\]$(prompt_kube_context)"; # K8s context details
+PS1="\$(kube_ps1)"; # K8s context details
+PS1+="\[\033]0;\W\007\]"; # working directory base name
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
