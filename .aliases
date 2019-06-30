@@ -17,6 +17,8 @@ alias w="cd ~/Work"
 
 # Kubernetes
 alias kc="kubectl"
+alias clusterservices="kc get clusterserviceclasses -o=custom-columns=NAME:.spec.externalName,DESCRIPTION:.spec.description"
+alias clusterserviceplans="kc get clusterserviceplans -o=custom-columns=ID:.spec.externalID,NAME:.spec.externalName,DESCRIPTION:.spec.externalMetadata.longDescription"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
