@@ -1,3 +1,8 @@
+" Initialize plugin system
+call plug#begin('~/.vim/plugged')
+	Plug 'rust-lang/rust.vim'
+call plug#end()
+
 " Use the Solarized Dark theme
 set background=dark
 colorscheme solarized
