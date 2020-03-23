@@ -1,6 +1,19 @@
 " Initialize plugin system
 call plug#begin('~/.vim/plugged')
 	Plug 'rust-lang/rust.vim'
+
+	" Source: https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9
+	Plug 'airblade/vim-gitgutter'
+	Plug 'editorconfig/editorconfig-vim'
+	Plug 'itchyny/lightline.vim'
+	Plug 'junegunn/fzf'
+	Plug 'junegunn/fzf.vim'
+	Plug 'mattn/emmet-vim'
+	Plug 'preservim/nerdtree'
+	Plug 'terryma/vim-multiple-cursors'
+	Plug 'tpope/vim-eunuch'
+	Plug 'tpope/vim-surround'
+	Plug 'w0rp/ale'
 call plug#end()
 
 " Use the Solarized Dark theme
