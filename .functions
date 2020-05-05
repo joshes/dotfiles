@@ -231,3 +231,7 @@ function cleandocker() {
 	docker rmi $(docker images -q -f "dangling=true")
 	echo "Done."
 }
+
+function llisteners() {
+	sudo lsof -PiTCP -sTCP:LISTEN
+}
